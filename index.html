@@ -2,26 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bongsy</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bongsy | Design & Code</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <nav class="nav-bar">
-      <h1 class="logo">✞ Bongsy ✞</h1>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main class="hero">
-    <h2>Enter the Realm of Bongsy</h2>
-    <p>A fusion of code, design, and digital arcana.</p>
-  </main>
+  <div class="hero">
+    <h1 class="title">Bongsy</h1>
+    <p class="tagline">Designs from the Abyss. Code from the Shadows.</p>
+  </div>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am Bongsy — a graphic alchemist and code warlock conjuring visuals and software in the gothic underworld. I blend modern dev tools with cursed aesthetics.</p>
+    <ul>
+      <li>Design: Photoshop, Illustrator, Figma</li>
+      <li>Code: HTML, CSS, JS, React</li>
+    </ul>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-grid">
+      <div class="project">Project 1</div>
+      <div class="project">Project 2</div>
+      <div class="project">Project 3</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/maypkwdy" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required/>
+      <input type="email" name="_replyto" placeholder="Your Email" required/>
+      <textarea name="message" placeholder="Speak your soul..." required></textarea>
+      <button type="submit">Summon</button>
+    </form>
+
+    <div class="socials">
+      <a href="https://github.com/placeholder" target="_blank">GitHub</a>
+      <a href="https://instagram.com/placeholder" target="_blank">Instagram</a>
+      <a href="https://twitter.com/placeholder" target="_blank">Twitter</a>
+    </div>
+  </section>
 </body>
 </html>
